@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Sunflower:wght@300&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    margin: 20px;
+    overflow-y: hidden;
+}
+
+.heading {
+    font-family: "Jost", serif;
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    align-items: center;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    background-color: #0389FF1F;
+
+}
+
+.accordion-header.active .arrow {
+    rotate: 180deg;
+}
+
+.arrow {
+    right: 1px;
+    position: absolute;
+    transition: 0.1s;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    font-family: "Jost", serif;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #06AFF233;
+    backdrop-filter: blur(20px);
+    transition: background 0.3s;
+    color: white;
+    font-weight: 900;
+    position: relative;
+}
+
+
+.accordion-header img {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+.accordion-content {
+    font-family: "Jost", serif;
+    font-weight: 400;
+    display: none;
+    padding: 15px;
+    background: #06AFF233;
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+.accordion-header.active+.accordion-content {
+    display: block;
+}
+
+.icon-1 {
+    background-color: #EAF9FF;
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 50px;
+    padding: 15px 15px;
+}
+
+.icon-1:hover {
+    background-color: #003459;
+}
+
+.bg-img {
+    background-image: url(/assets/images/Frame\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+}
+
+
+.arrow {
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width:992px) {
+    .accordion {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 522px;
+        margin: auto;
+    }
+
+    .head-text{
+        padding-right: 50px;
+    }
+}
+
+@media (min-width:992px) {
+    .accordion {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 522px;
+        margin: auto;
+    }
+}
