@@ -17,11 +17,10 @@ body {
 .accordion-item {
     border-bottom: 1px solid #ccc;
     background-color: #0389FF1F;
-
 }
 
 .accordion-header.active .arrow {
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 
 .arrow {
@@ -47,7 +46,6 @@ body {
     font-weight: 900;
     position: relative;
 }
-
 
 .accordion-header img {
     margin-right: 15px;
@@ -99,7 +97,6 @@ section {
     min-height: 100vh;
 }
 
-
 .arrow {
     position: absolute;
     right: 0;
@@ -115,7 +112,7 @@ section {
         margin: auto;
     }
 
-    .head-text{
+    .head-text {
         padding-right: 50px;
     }
 }
